@@ -1,0 +1,402 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Neha Umesh Mandlik's student portfolio featuring web development, AI and machine learning projects.">
+  <title>Neha Umesh Mandlik | Portfolio</title>
+
+  <style>
+    :root {
+      --navy: #14213d;
+      --blue: #2563eb;
+      --light: #f4f7fc;
+      --text: #263247;
+      --muted: #65738b;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--light);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      background: var(--navy);
+      color: var(--white);
+      padding: 18px 7%;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .brand {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      list-style: none;
+    }
+
+    nav a {
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    .hero {
+      padding: 90px 8% 80px;
+      background: linear-gradient(135deg, #14213d, #244b83);
+      color: white;
+      text-align: center;
+    }
+
+    .hero .tag {
+      color: #bfdbfe;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-size: 0.85rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 6vw, 3.8rem);
+      line-height: 1.2;
+      margin: 14px 0;
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: 0 auto 24px;
+      color: #e5eaf5;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 11px 20px;
+      margin: 5px;
+      border-radius: 8px;
+      font-weight: bold;
+      background: white;
+      color: var(--navy);
+    }
+
+    .button.primary {
+      background: #60a5fa;
+      color: #10213e;
+    }
+
+    main {
+      max-width: 1050px;
+      margin: auto;
+      padding: 24px;
+    }
+
+    section {
+      padding: 35px 0;
+      scroll-margin-top: 20px;
+    }
+
+    .section-title {
+      color: var(--navy);
+      font-size: 1.8rem;
+      margin-bottom: 18px;
+    }
+
+    .about,
+    .card {
+      background: var(--white);
+      border-radius: 14px;
+      padding: 23px;
+      box-shadow: 0 4px 18px rgba(20, 33, 61, 0.06);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .card h3 {
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      margin-bottom: 8px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill {
+      background: #dbeafe;
+      color: #1e40af;
+      border-radius: 20px;
+      padding: 7px 14px;
+      font-size: 0.92rem;
+      font-weight: bold;
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 12px;
+    }
+
+    footer {
+      text-align: center;
+      background: var(--navy);
+      color: white;
+      padding: 22px;
+      margin-top: 25px;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 650px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        gap: 12px;
+      }
+
+      .hero {
+        padding: 65px 6%;
+      }
+
+      main {
+        padding: 18px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav aria-label="Main navigation">
+      <div class="brand">Neha Mandlik</div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <p class="tag">Student Portfolio</p>
+    <h1>Hi, I'm Neha Umesh Mandlik</h1>
+    <p>
+      B.Tech student specializing in Computer Science Engineering
+      (Artificial Intelligence and Machine Learning), interested in
+      web development and AI-based applications.
+    </p>
+    <a class="button primary" href="#projects">Explore My Projects</a>
+    <a class="button" href="#contact">Contact Me</a>
+  </section>
+
+  <main>
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
+      <div class="about">
+        <p>
+          I am a second-year B.Tech student at Kolhapur Institute
+          of Technology. My technical skills include HTML, CSS,
+          JavaScript, and Python. I am interested in developing
+          useful web applications and exploring artificial
+          intelligence and machine learning.
+        </p>
+        <p style="margin-top: 12px;">
+          My goal is to gain practical experience, strengthen my
+          programming skills, and contribute to real-world software
+          development projects.
+        </p>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2 class="section-title">Education</h2>
+      <div class="card">
+        <h3>B.Tech — Computer Science Engineering</h3>
+        <p>Artificial Intelligence and Machine Learning</p>
+        <p>Kolhapur Institute of Technology</p>
+        <p class="muted">Second Year | Expected graduation: To be added</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="skills">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">Python</span>
+        <span class="skill">C</span>
+        <span class="skill">C++</span>
+        <span class="skill">Artificial Intelligence</span>
+        <span class="skill">Machine Learning</span>
+      </div>
+      <p class="muted" style="margin-top: 12px;">
+        C and C++ are listed based on the programming certificates
+        you reported.
+      </p>
+    </section>
+
+    <section id="internship">
+      <h2 class="section-title">Internship Experience</h2>
+      <div class="card">
+        <h3>Digital Microsys</h3>
+        <p><strong>Intern</strong></p>
+        <p class="muted">Dates and responsibilities to be added</p>
+        <p>
+          Add a brief description of your actual internship tasks,
+          technologies used, and what you learned here.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>AI Chatbot</h3>
+          <p>
+            An AI-based chatbot project focused on conversational
+            interaction.
+          </p>
+          <p class="muted">Technologies: Add your actual project stack.</p>
+          <p>Source code: <span class="muted">Add project link when available.</span></p>
+        </article>
+
+        <article class="card">
+          <h3>Tourist Place Recommendation System</h3>
+          <p>
+            A project designed to help users discover tourist
+            destinations according to the recommendation criteria
+            implemented in the system.
+          </p>
+          <p class="muted">Technologies: Add your actual project stack.</p>
+          <p>Source code: <span class="muted">Add project link when available.</span></p>
+        </article>
+
+        <article class="card">
+          <h3>Personal Portfolio Website</h3>
+          <p>
+            A responsive website presenting my education, skills,
+            projects, and contact details. Hosted using GitHub Pages.
+          </p>
+          <p>
+            <a href="https://github.com/nehamandlik19-netizen/portfolio"
+               target="_blank" rel="noopener noreferrer">
+              View Source Repository
+            </a>
+          </p>
+          <p>
+            <a href="https://nehamandlik19-netizen.github.io/portfolio/"
+               target="_blank" rel="noopener noreferrer">
+              View Live Website
+            </a>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <h2 class="section-title">Certifications</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>C Programming</h3>
+          <p>Certificate in C programming.</p>
+          <p class="muted">Issuing organization: To be added</p>
+        </div>
+        <div class="card">
+          <h3>C++ Programming</h3>
+          <p>Certificate in C++ programming.</p>
+          <p class="muted">Issuing organization: To be added</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="card">
+        <p>
+          I am interested in learning opportunities and suitable
+          web development or software internships.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:mandlikneha04@gmail.com">Send Email</a>
+          <a href="tel:9960798131">Call Me</a>
+          <a href="https://github.com/nehamandlik19-netizen"
+             target="_blank" rel="noopener noreferrer">
+            GitHub Profile
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      &copy; <span id="year"></span> Neha Umesh Mandlik.
+      Personal Portfolio.
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>
